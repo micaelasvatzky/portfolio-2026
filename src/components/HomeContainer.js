@@ -10,8 +10,8 @@ const HomeContainer = () => {
         </div>
         <div className="flex mt-20 justify-between w-200">
             <HomeButton title="About Me" href="/about-me"/>
-            <HomeButton title="Work" href="work"/>
-            <HomeButton title="Contact" href="contact"/>
+            <HomeButton title="Work" href="/work"/>
+            <HomeButton title="Contact" href="/contact"/>
         </div>
     </div>
   )
