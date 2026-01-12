@@ -1,19 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
+import Navbar from '@/components/Navbar'
 
 const AboutContainer = () => {
   return (
-    <div className="w-screen min-h-screen flex flex-col justify-center items-center text-[#2B2B2B] px-10">
-      
-  
+    
+    <div className="w-screen min-h-5xl flex flex-col justify-center items-center text-[#2B2B2B] pt-10">
       <h1 className="text-5xl text-[#B9471C] font-bold mb-12">
         About Me
       </h1>
-
       
       <div className="flex gap-16 items-start w-screen justify-center">
         
-      
         <div className="shrink-0">
           <Image
             src="/assets/micabn.jpeg"

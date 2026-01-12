@@ -5,25 +5,29 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="w-screen min-h-screen flex flex-col justify-center items-center px-10 text-[#2B2B2B]"
+      className="w-screen min-h-5xl flex flex-col justify-center items-center px-10 text-[#2B2B2B]"
     >
-      <h1 className="text-5xl text-[#B9471C] font-bold mb-12">Contact</h1>
+      <h1 className="text-5xl text-[#B9471C] font-bold mb-12">
+        Contact
+      </h1>
 
-      <div className="flex w-screen max-w-6xl gap-16 items-center justify-center">
-        <div className="max-w-3xl">
-          <div>
-            <p className="leading-relaxed mb-8">
-              Si te interesa mi perfil, querés hacerme una consulta o
-              simplemente conectar, podés escribirme o encontrarme en mis redes
-              profesionales.
-            </p>
-          </div>
+      <div className="flex w-screen max-w-6xl gap-16 items-start justify-center">
+        
+        {/* Left column */}
+        <div className="w-full max-w-md">
+          <p className="leading-relaxed mb-8">
+            Si te interesa mi perfil, querés hacerme una consulta o simplemente
+            conectar, podés escribirme o encontrarme en mis redes profesionales.
+          </p>
 
           <Form />
         </div>
 
-        <div>
-          <div className="flex gap-10">
+        {/* Right column */}
+        <div className="flex flex-col items-center">
+          
+          {/* Social links */}
+          <div className="flex gap-10 mb-6">
             <a
               href="https://github.com/micaelasvatzky"
               target="_blank"
@@ -33,8 +37,8 @@ const Contact = () => {
               <Image
                 src="/assets/github.png"
                 alt="GitHub"
-                width={32}
-                height={32}
+                width={28}
+                height={28}
               />
               <span>GitHub</span>
             </a>
@@ -48,13 +52,15 @@ const Contact = () => {
               <Image
                 src="/assets/linkedin.png"
                 alt="LinkedIn"
-                width={32}
-                height={32}
+                width={28}
+                height={28}
               />
               <span>LinkedIn</span>
             </a>
           </div>
-          <div className="shrink-0 mt-5">
+
+          {/* Image */}
+          <div className="shrink-0">
             <Image
               src="/assets/contactbn.jpeg"
               alt="Contacto"
