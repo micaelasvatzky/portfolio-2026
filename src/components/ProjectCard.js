@@ -9,25 +9,64 @@ const ProjectCard = ({
   tech = [],
 }) => {
   return (
-    <div className="relative group w-full max-w-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+    <div className="w-full max-w-sm bg-[#B9471C] rounded-2xl shadow-lg overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-2xl">
       
-      {/* Imagen */}
-      <div className="relative w-full h-48">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-      </div>
+      <h3 className="text-xl font-bold text-[#EFE6DA] text-center py-2 border-gray-200">
+        {title}
+      </h3>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center items-center p-5 text-center text-white">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-sm mb-3">{description}</p>
+      {image && (
+        <div className="relative w-full h-48">
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
+          />
 
-        {/* Tech stack */}
-        <div className="flex flex-wrap justify-center gap-2">
+          
+          <div className="absolute bottom-0 right-0 flex gap-6 bg-[#B9471C] px-4 py-2 rounded-tl-xl backdrop-blur-sm">
+            {githubLink && (
+              <a
+                href={githubLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-110"
+              >
+                <Image
+                  src="/assets/github.png"
+                  alt="GitHub"
+                  width={28}
+                  height={28}
+                />
+              </a>
+            )}
+
+            {vercelLink && (
+              <a
+                href={vercelLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-transform hover:scale-110"
+              >
+                <Image
+                  src="/assets/vercel2.png"
+                  alt="Vercel"
+                  width={28}
+                  height={28}
+                />
+              </a>
+            )}
+          </div>
+        </div>
+      )}
+
+      <div className="p-4 flex flex-col grow">
+        <p className="text-[#EFE6DA] text-sm mb-3 text-center">
+          {description}
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-2 mb-4">
           {tech.map((t, i) => (
             <span
               key={i}
@@ -36,30 +75,6 @@ const ProjectCard = ({
               {t}
             </span>
           ))}
-        </div>
-
-        {/* Links */}
-        <div className="flex gap-4 mt-3">
-          {githubLink && (
-            <a
-              href={githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#B9471C] text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-[#A03B13] transition-colors"
-            >
-              GitHub
-            </a>
-          )}
-          {vercelLink && (
-            <a
-              href={vercelLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#B9471C] text-white px-3 py-1 rounded-md text-sm font-semibold hover:bg-[#A03B13] transition-colors"
-            >
-              Vercel
-            </a>
-          )}
         </div>
       </div>
     </div>

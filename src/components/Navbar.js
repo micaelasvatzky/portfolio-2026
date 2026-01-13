@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 
 const navItems = [
   { title: "About Me", href: "/about-me" },
@@ -33,13 +34,11 @@ const Navbar = () => {
   }, [pathname]);
 
   return (
-    <nav className="w-full h-14 sticky top-0 z-50 flex items-center">
+    <nav className="w-full h-14 sticky top-2 z-50 flex items-center">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 w-full">
         
-        <div className="text-lg md:text-xl font-bold text-[#B9471C]">
-          Mica Portfolio
-        </div>
-        
+        <Link href="/"><Image src="/assets/logo.png" alt="logo" width={120} height={32}/></Link>
+
         <div className="relative flex gap-6 md:gap-8" ref={containerRef}>
           {navItems.map((item) => {
             const isActive = pathname === item.href;

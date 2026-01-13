@@ -24,4 +24,8 @@ body {
   min-height: 100%;
   background-color: #EFE6DA;
   font-family: Arial, Helvetica, sans-serif;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+    url('/assets/buried.png');
 }
+

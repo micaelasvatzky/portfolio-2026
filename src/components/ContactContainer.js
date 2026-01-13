@@ -13,7 +13,7 @@ const Contact = () => {
 
       <div className="flex w-screen max-w-6xl gap-16 items-start justify-center">
         
-        {/* Left column */}
+       
         <div className="w-full max-w-md">
           <p className="leading-relaxed mb-8">
             Si te interesa mi perfil, querés hacerme una consulta o simplemente
@@ -23,10 +23,10 @@ const Contact = () => {
           <Form />
         </div>
 
-        {/* Right column */}
+       
         <div className="flex flex-col items-center">
           
-          {/* Social links */}
+        
           <div className="flex gap-10 mb-6">
             <a
               href="https://github.com/micaelasvatzky"
@@ -59,7 +59,6 @@ const Contact = () => {
             </a>
           </div>
 
-          {/* Image */}
           <div className="shrink-0">
             <Image
               src="/assets/contactbn.jpeg"

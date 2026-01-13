@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <>
-    <Navbar />
+
     <AboutContainer />
     </>
   );
