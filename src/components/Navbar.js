@@ -37,7 +37,7 @@ const Navbar = () => {
     <nav className="w-full h-14 sticky top-2 z-50 flex items-center">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 w-full">
         
-        <Link href="/"><Image src="/assets/logo.png" alt="logo" width={120} height={32}/></Link>
+        <Link href="/"><Image src="/logo.png" alt="logo" width={120} height={32}/></Link>
 
         <div className="relative flex gap-6 md:gap-8" ref={containerRef}>
           {navItems.map((item) => {
