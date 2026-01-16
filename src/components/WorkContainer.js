@@ -49,7 +49,7 @@ const WorkContainer = () => {
   return (
     <div className="w-screen min-h-5xl flex flex-col justify-center items-center py-10 px-6 ">
       <h1 className="text-5xl text-[#B9471C] font-bold mb-12">
-        Work
+        Trabajos
       </h1>
 
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

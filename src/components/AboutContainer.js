@@ -1,15 +1,52 @@
-import React from 'react'
-import Image from 'next/image'
+import React from "react";
+import Image from "next/image";
 
 const AboutContainer = () => {
   return (
-    
-    <div className="w-screen min-h-5xl flex flex-col justify-center items-center text-[#2B2B2B] pt-10">
-      <h1 className="text-5xl text-[#B9471C] font-bold mb-12">
-        About Me
-      </h1>
+    <div
+      className="
+        w-full
+        min-h-4xl
+        flex flex-col
+        items-center
+        text-[#2B2B2B]
+        pt-16
+        px-4
+        md:px-0
+        md:w-screen
+        md:h-lg
+        md:pt-6
+      "
+    >
       
-      <div className="flex gap-16 items-start w-screen justify-center">
+      <h1
+        className="
+          text-3xl
+          sm:text-4xl
+          md:text-5xl
+          text-[#B9471C]
+          font-bold
+          mb-10
+          md:mb-12
+        "
+      >
+        Sobre Mí
+      </h1>
+
+      
+      <div
+        className="
+          flex flex-col
+          items-center
+          gap-10
+          w-full
+          md:flex-row
+          md:gap-16
+          md:items-start
+          md:w-screen
+          md:justify-center
+        "
+      >
         
         <div className="shrink-0">
           <Image
@@ -17,12 +54,27 @@ const AboutContainer = () => {
             alt="Mica"
             width={300}
             height={400}
-            className="object-cover rounded-2xl"
+            className="
+              object-cover
+              rounded-2xl
+              w-48
+              h-auto
+              sm:w-56
+              md:w-75
+            "
           />
         </div>
 
-        <div className="max-w-2xl">
-          <p className="leading-relaxed">
+        
+        <div
+          className="
+            max-w-xl
+            md:max-w-2xl
+            text-center
+            md:text-left
+          "
+        >
+          <p className="leading-relaxed text-sm sm:text-base">
             Soy estudiante de la Licenciatura en Tecnología Multimedial y
             desarrolladora front-end en formación. Me interesa crear
             experiencias digitales claras, funcionales y con una mirada estética
@@ -35,11 +87,31 @@ const AboutContainer = () => {
           </p>
 
           
-          <h4 className="mt-10 text-2xl text-[#B9471C] font-bold">
+          <h4
+            className="
+              mt-8
+              md:mt-10
+              text-xl
+              md:text-2xl
+              text-[#B9471C]
+              font-bold
+            "
+          >
             Habilidades
           </h4>
 
-          <div className="grid grid-cols-6 gap-4 mt-6 justify-items-start">
+          <div
+            className="
+              grid
+              grid-cols-4
+              sm:grid-cols-6
+              gap-4
+              my-10
+              justify-items-center
+              md:justify-items-start
+              md:my-6
+            "
+          >
             {[
               "/assets/html5-2.svg",
               "/assets/css2.png",
@@ -55,7 +127,7 @@ const AboutContainer = () => {
             ].map((src, index) => (
               <div
                 key={index}
-                className="w-12 h-15 flex items-center justify-center"
+                className="w-12 h-12 flex items-center justify-center"
               >
                 <Image
                   src={src}
@@ -70,7 +142,7 @@ const AboutContainer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutContainer
+export default AboutContainer;
