@@ -10,7 +10,7 @@ const AboutContainer = () => {
         flex flex-col
         items-center
         text-[#2B2B2B]
-        pt-16
+        py-66
         px-4
         md:px-0
         md:w-screen

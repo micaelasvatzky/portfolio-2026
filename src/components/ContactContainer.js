@@ -12,7 +12,7 @@ const Contact = () => {
         justify-center
         items-center
         px-4
-        pb-6
+        py-6
         sm:px-6
         md:px-10
         text-[#2B2B2B]
@@ -20,7 +20,7 @@ const Contact = () => {
         md:min-h-5xl
       "
     >
-      {/* Título */}
+      
       <h1
         className="
           text-3xl
@@ -35,7 +35,7 @@ const Contact = () => {
         Contacto
       </h1>
 
-      {/* Contenido */}
+      
       <div
         className="
           flex flex-col
@@ -50,7 +50,7 @@ const Contact = () => {
           md:w-screen
         "
       >
-        {/* Texto + Form */}
+        
         <div className="w-full max-w-md">
           <p className="leading-relaxed mb-6 md:mb-8 text-sm sm:text-base">
             Si te interesa mi perfil, querés hacerme una consulta o simplemente
