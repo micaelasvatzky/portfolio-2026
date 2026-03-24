@@ -3,20 +3,20 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Recetukis",
-    description: "Plataforma web de recetas que consume datos desde una API externa, permitiendo explorar distintas opciones gastronómicas de forma dinámica.",
-    githubLink: "https://github.com/micaelasvatzky/recetukis-2025",
-    vercelLink: "https://recetukis.vercel.app/",
-    tech: ["HTML", "CSS", "Javascript", "Next"],
-    image: "/assets/Recetukisbn.png"
+    title: "DevPath",
+    description: "Plataforma educativa orientada a la enseñanza de programación, con contenidos estructurados y una arquitectura pensada para crecer y escalar.",
+    githubLink: "https://github.com/micaelasvatzky/devpath-frontend",
+    vercelLink: "https://devpath-2025.vercel.app/",
+    tech: ["React", "Next.js", "Tailwind", "Node.js", "MongoDB"],
+    image: "/assets/devpathbn.png"
   },
   {
-    title: "Popcorn.js",
-    description: "Aplicación web de películas que obtiene información desde una API externa, ofreciendo un catálogo interactivo con detalles actualizados de cada film.",
-    githubLink: "https://github.com/micaelasvatzky/popcorn.js",
-    vercelLink: "https://popcornjs.vercel.app/",
-    tech: ["React", "Next.js", "Tailwind"],
-    image: "/assets/popcornjsbn.png"
+    title: "Studio 3 Ecommerce",
+    description: "E-commerce para un estudio de diseño, enfocado en la venta de mockups y plantillas digitales. Consume datos de una API propia.",
+    githubLink: "https://github.com/renatamandelman/prog3-tp4-ecommerce",
+    vercelLink: "https://prog3-tp4-ecommerce.vercel.app",
+    tech: ["React", "Next.js", "Tailwind", "Node.js", "MongoDB"],
+    image: "/assets/studio3bn.png"
   },
   {
     title: "Rick and Morty App",
@@ -27,23 +27,22 @@ const projects = [
     image: "/assets/rickymortyjsbn.png"
   },
   {
-    title: "Studio 3 Page",
-    description: "E-commerce para un estudio de diseño, enfocado en la venta de mockups y plantillas digitales. Consume datos de una API propia.",
-    githubLink: "https://github.com/renatamandelman/prog3-tp4-ecommerce",
-    vercelLink: "https://prog3-tp4-ecommerce.vercel.app",
-    tech: ["React", "Next.js", "Tailwind", "Node.js", "MongoDB"],
-    image: "/assets/studio3bn.png"
+    title: "Popcorn.js",
+    description: "Aplicación web de películas que obtiene información desde una API externa, ofreciendo un catálogo interactivo con detalles actualizados de cada film.",
+    githubLink: "https://github.com/micaelasvatzky/popcorn.js",
+    vercelLink: "https://popcornjs.vercel.app/",
+    tech: ["React", "Next.js", "Tailwind"],
+    image: "/assets/popcornjsbn.png"
   },
   {
-    title: "DevPath",
-    description: "Plataforma educativa orientada a la enseñanza de programación, con contenidos estructurados y una arquitectura pensada para crecer y escalar.",
-    githubLink: "https://github.com/micaelasvatzky/devpath-frontend",
-    vercelLink: "https://devpath-2025.vercel.app/",
-    tech: ["React", "Next.js", "Tailwind", "Node.js", "MongoDB"],
-    image: "/assets/devpathbn.png"
+    title: "Recetukis",
+    description: "Plataforma web de recetas que consume datos desde una API externa, permitiendo explorar distintas opciones gastronómicas de forma dinámica.",
+    githubLink: "https://github.com/micaelasvatzky/recetukis-2025",
+    vercelLink: "https://recetukis.vercel.app/",
+    tech: ["HTML", "CSS", "Javascript", "Next"],
+    image: "/assets/Recetukisbn.png"
   },
 ];
-
 
 const WorkContainer = () => {
   return (
