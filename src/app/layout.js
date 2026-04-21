@@ -1,34 +1,28 @@
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import { LanguageProvider } from "./contexts/LanguageContext";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import "./globals.css";
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Micaela Svatzky - 2026",
+  title: "Micaela Svatzky | Portfolio",
+  description: "Frontend Developer - Building high-performance digital products",
   icons: {
-    icon: "/logo.png", 
+    icon: "/logo.png",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Navbar />
-        {children}
+    <html lang="es">
+      <body className="text-black dark:text-white min-h-screen flex flex-col bg-white dark:bg-black">
+        <div className="ambient-blob" />
+        <LanguageProvider>
+          <ThemeProvider>
+            <Navbar />
+            <main className="flex-grow">{children}</main>
+          </ThemeProvider>
+        </LanguageProvider>
         <Footer />
       </body>
     </html>

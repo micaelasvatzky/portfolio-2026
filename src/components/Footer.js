@@ -1,10 +1,45 @@
-import React from 'react';
+"use client";
+
+import { useLanguage } from "@/app/contexts/LanguageContext";
+import { translations } from "@/translations";
+import Link from "next/link";
 
 const Footer = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
-    <div className="fixed bottom-0 w-full h-8 bg-[#B9471C] flex justify-center items-center">
-      <p className="text-[#EFE6DA]">Micaela Svatzky - 2026</p>
-    </div>
+    <footer className="fixed bottom-0 left-0 right-0 w-full px-6 md:px-20 py-6 border-t border-black/5 dark:border-white/5 bg-white/[0.03] dark:bg-black/[0.03] backdrop-blur-2xl z-40">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 opacity-40 text-[10px] font-black uppercase tracking-[0.2em] text-center md:text-left">
+        <span>micaela svatzky - 2026</span>
+        <div className="flex gap-6">
+          <a
+            href="https://github.com/micaelas"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-100 transition-opacity"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/svatzkymicaela"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-100 transition-opacity"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-100 transition-opacity"
+          >
+            Instagram
+          </a>
+        </div>
+      </div>
+    </footer>
   );
 };
 
