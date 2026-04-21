@@ -78,11 +78,11 @@ export default function Contact() {
           </Formik>
 
           <div className="mt-10 lg:mt-16 flex items-center gap-8">
-            <a href="https://github.com/micaelas" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-orange-500 transition-colors group">
+            <a href="https://github.com/micaelasvatzky" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-orange-500 transition-colors group">
               <Github size={18} />
               <span className="text-[10px] font-black uppercase tracking-widest">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/svatzkymicaela" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-500 transition-colors group">
+            <a href="https://www.linkedin.com/in/micaela-svatzky-402082279/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-500 transition-colors group">
               <Linkedin size={18} />
               <span className="text-[10px] font-black uppercase tracking-widest">LinkedIn</span>
             </a>

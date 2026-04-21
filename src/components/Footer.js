@@ -14,7 +14,7 @@ const Footer = () => {
         <span>micaela svatzky - 2026</span>
         <div className="flex gap-6">
           <a
-            href="https://github.com/micaelas"
+            href="https://github.com/micaelasvatzky"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-100 transition-opacity"
@@ -22,20 +22,12 @@ const Footer = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/svatzkymicaela"
+            href="https://www.linkedin.com/in/micaela-svatzky-402082279/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-100 transition-opacity"
           >
             LinkedIn
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-100 transition-opacity"
-          >
-            Instagram
           </a>
         </div>
       </div>
