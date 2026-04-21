@@ -6,7 +6,7 @@ import { Formik, Form as FormikForm, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "@/translations";
-import { Github, Linkedin, Send } from "lucide-react";
+import { Send } from "lucide-react";
 import Image from "next/image";
 
 export default function Contact() {
@@ -76,17 +76,6 @@ export default function Contact() {
               </FormikForm>
             )}
           </Formik>
-
-          <div className="mt-10 lg:mt-16 flex items-center gap-8">
-            <a href="https://github.com/micaelasvatzky" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-orange-500 transition-colors group">
-              <Github size={18} />
-              <span className="text-[10px] font-black uppercase tracking-widest">GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/micaela-svatzky-402082279/" target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:text-blue-500 transition-colors group">
-              <Linkedin size={18} />
-              <span className="text-[10px] font-black uppercase tracking-widest">LinkedIn</span>
-            </a>
-          </div>
         </div>
 
         <div className="order-1 lg:order-2">
