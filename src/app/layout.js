@@ -8,7 +8,7 @@ export const metadata = {
   title: "Micaela Svatzky | Portfolio",
   description: "Frontend Developer - Building high-performance digital products",
   icons: {
-    icon: "/logo.png",
+    icon: "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23000'/><text x='50' y='72' font-family='Arial Black,sans-serif' font-size='50' font-weight='900' fill='white' text-anchor='middle'>MS</text></svg>",
   },
 };
 
