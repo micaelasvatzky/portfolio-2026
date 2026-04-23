@@ -13,7 +13,7 @@ export const translations = {
       nameFirst: "Micaela",
       nameLast: "Svatzky",
       role: "Desarrolladora Front End",
-      shortPhrase: "Creando experiencias que viven entre el código y el diseño.",
+      shortPhrase: "Creando experiencias que conviven entre el código y el diseño.",
       heroDesc: "Estudiante de Tecnología Multimedia y Desarrolladora Frontend con experiencia práctica en la construcción de aplicaciones web reales. Uso React, Next.js y JavaScript. Tengo la capacidad de entregar soluciones integrales que abarcan interfaces frontend, integración de API REST y conectividad con bases de datos MongoDB. Mi enfoque está en la experiencia del usuario, código limpio y la transformación de ideas en productos funcionales listos para producción.",
       buttons: {
         about: "Sobre Mí",
