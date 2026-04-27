@@ -44,7 +44,7 @@ export default function About() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
             <div>
-              <h3 className="text-[10px] font-black uppercase tracking-[0.4em] mb-3 lg:mb-4 text-orange-500">
+              <h3 className="text-[10px] font-black uppercase tracking-[0.4em] mb-3 lg:mb-4 opacity-60">
                 {t.about.devLabel}
               </h3>
               <div className="flex flex-wrap gap-2">
@@ -55,7 +55,7 @@ export default function About() {
             </div>
 
             <div>
-              <h3 className="text-[10px] font-black uppercase tracking-[0.4em] mb-3 lg:mb-4 text-purple-500">
+              <h3 className="text-[10px] font-black uppercase tracking-[0.4em] mb-3 lg:mb-4 opacity-60">
                 {t.about.designLabel}
               </h3>
               <div className="flex flex-wrap gap-2">

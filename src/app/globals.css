@@ -174,8 +174,8 @@ main {
 }
 
 .btn-primary:hover {
-  background: #ff6333;
   transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 /* Project card */
@@ -206,33 +206,7 @@ main {
   transform: scale(1.05);
 }
 
-.project-card-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.project-card:hover .project-card-overlay {
-  opacity: 1;
-}
-
-.project-card-overlay a {
-  width: 3rem;
-  height: 3rem;
-  background: var(--bg-color);
-  color: var(--ink-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s;
-}
+/* Skills tags */
 
 .project-card-overlay a:hover {
   transform: scale(1.1);
@@ -241,19 +215,20 @@ main {
 /* Skills tags */
 .skill-tag {
   padding: 0.25rem 0.75rem;
-  background: rgba(0, 0, 0, 0.05);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.5rem;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .dark .skill-tag {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Mobile menu */

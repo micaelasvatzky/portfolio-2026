@@ -34,9 +34,12 @@ export default function Home() {
           <h3 className="text-3xl sm:text-4xl lg:text-6xl font-black uppercase tracking-tighter mb-4 lg:mb-6 leading-tight lg:leading-none">
             {t.home.role}
           </h3>
-          <p className="text-base md:text-lg font-medium opacity-50">
+          <p className="text-base md:text-lg font-medium opacity-50 text-balance">
             {t.home.shortPhrase}
           </p>
+          <a href="/work" className="inline-flex items-center gap-4 mt-6 px-10 py-3 bg-black dark:bg-white text-white dark:text-black text-[10px] font-black uppercase tracking-[0.3em] rounded-xl hover:bg-white hover:text-black hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all duration-300">
+            {t.home.ctaWork} →
+          </a>
         </motion.div>
       </div>
     </main>

@@ -14,6 +14,7 @@ export const translations = {
       nameLast: "Svatzky",
       role: "Desarrolladora Front End",
       shortPhrase: "Creando experiencias que conviven entre el código y el diseño.",
+      ctaWork: "Ver trabajos",
       heroDesc: "Estudiante de Tecnología Multimedia y Desarrolladora Frontend con experiencia práctica en la construcción de aplicaciones web reales. Uso React, Next.js y JavaScript. Tengo la capacidad de entregar soluciones integrales que abarcan interfaces frontend, integración de API REST y conectividad con bases de datos MongoDB. Mi enfoque está en la experiencia del usuario, código limpio y la transformación de ideas en productos funcionales listos para producción.",
       buttons: {
         about: "Sobre Mí",
@@ -130,7 +131,8 @@ export const translations = {
       nameFirst: "Micaela",
       nameLast: "Svatzky",
       role: "Frontend Developer",
-      shortPhrase: "Building experiences that live between code and design.",
+       shortPhrase: "Building experiences that live between code and design.",
+       ctaWork: "View work",
       heroDesc: "Multimedia Technology student and Frontend Developer with hands-on experience building real-world web applications using React, Next.js, and JavaScript. Proven ability to deliver end-to-end solutions encompassing frontend interfaces, REST API integration, and MongoDB database connectivity. Strong focus on user experience, clean code, and translating ideas into functional, production-ready products.",
       buttons: {
         about: "About Me",
